@@ -17,6 +17,8 @@ $key = isset($_GET['search'])?$_GET['search']:"Test";
 foreach (array_filter($array, function ($x) {global $key;  if(substr_count($x->title, $key) > 0) return $x;}) as $data){
     echo $data->getPost();
 }
-echo '<li>'
-    
+echo '<li>';
+
+
+echo 'Max lol';
 ?>
